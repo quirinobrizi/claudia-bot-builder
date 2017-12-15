@@ -1,7 +1,7 @@
 {
-  "name": "claudia-bot-builder",
+  "name": "exa-bot-builder",
   "version": "2.15.1",
-  "description": "Create chat-bots for various platforms and deploy to AWS Lambda quickly",
+  "description": "Create chat-bots for various platforms and deploy with express or to AWS Lambda quickly",
   "main": "index.js",
   "scripts": {
     "pretest": "eslint lib spec *.js",
@@ -10,9 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/claudiajs/claudia-bot-builder"
+    "url": "https://github.com/quirinobrizi/exa-bot-builder"
   },
   "keywords": [
+    "express",
+    "exa",
     "claudia",
     "aws",
     "lambda",
@@ -33,12 +35,13 @@
   "author": "Slobodan Stojanovic <slobodan@cloudhorizon.com> (http://slobodan.me/), ",
   "contributors": [
     "Alexander Simovic (https://github.com/simalexan)",
-    "Gojko Adzic <gojko@gojko.com> (https://gojko.net)"
+    "Gojko Adzic <gojko@gojko.com> (https://gojko.net)",
+    "Quirino Brizi"
   ],
   "license": "MIT",
   "dependencies": {
     "alexa-message-builder": "^1.1.0",
-    "claudia-api-builder": "file:../claudia-api-builder",
+    "exa-api-builder": "2.5.1",
     "minimal-request-promise": "^1.3.0",
     "oh-no-i-insist": "^1.0.0",
     "souffleur": "^1.0.0",

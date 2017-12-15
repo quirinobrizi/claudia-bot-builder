@@ -1,4 +1,6 @@
-# Claudia Bot Builder
+# Exa Bot Builder
+
+This is a port of Claudia Bot Builder that allows to use Express.
 
 [![npm](https://img.shields.io/npm/v/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/claudia-bot-builder)
 [![npm](https://img.shields.io/npm/dt/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/claudia-bot-builder)
@@ -6,7 +8,7 @@
 [![Build Status](https://travis-ci.org/claudiajs/claudia-bot-builder.svg?branch=master)](https://travis-ci.org/claudiajs/claudia-bot-builder)
 [![Join the chat at https://gitter.im/claudiajs/claudia](https://badges.gitter.im/claudiajs/claudia.svg)](https://gitter.im/claudiajs/claudia?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-_Claudia Bot Builder_ helps developers create and deploy chat-bots for various platforms in minutes to AWS Lambda. It simplifies the messaging workflows, automatically sets up the correct web hooks, and guides you through configuration steps, so that you can focus on important business problems and not have to worry about infrastructure code.
+_Exa Bot Builder_ helps developers create and deploy chat-bots for various platforms in minutes to AWS Lambda. It simplifies the messaging workflows, automatically sets up the correct web hooks, and guides you through configuration steps, so that you can focus on important business problems and not have to worry about infrastructure code.
 
 | [🚀 Getting Started](https://claudiajs.com/tutorials/hello-world-chatbot.html) | [🛠 API Docs](docs/API.md) | [🤖 Example projects](https://github.com/claudiajs/example-projects#chat-bots) | [🤔 FAQ](#frequently-asked-questions) | [💬 Chat on Gitter](https://gitter.im/claudiajs/claudia) |
 |-----------------|----------|------------------|-----|----|
@@ -28,7 +30,7 @@ module.exports = botBuilder(function (message) {
 });
 ```
 
-This code is enough to operate bots for all supported platforms. Claudia Bot Builder automatically parses the incoming messages into a common format, so you can handle it easily. It also automatically packages the response into the correct message template for the requesting bot, so you do not have to worry about individual bot protocols.
+This code is enough to operate bots for all supported platforms. Exa Bot Builder automatically parses the incoming messages into a common format, so you can handle it easily. It also automatically packages the response into the correct message template for the requesting bot, so you do not have to worry about individual bot protocols.
 
 ## Supported platforms
 
@@ -57,7 +59,7 @@ See the [Chat-Bots section](https://github.com/claudiajs/example-projects#chat-b
 
 1. **How to run it locally?**
 
-   You can't. At least not easy. Claudia Bot Builder doesn't have a stand-alone http server in the background (such as Express, Hapi, etc.), instead it uses API Gateway and it's not trivial to simulate similar environment locally. Deploy it with `--version test` to create a separate test environment directly in AWS Lambda.
+   You can't. At least not easy. Exa Bot Builder doesn't have a stand-alone http server in the background (such as Express, Hapi, etc.), instead it uses API Gateway and it's not trivial to simulate similar environment locally. Deploy it with `--version test` to create a separate test environment directly in AWS Lambda.
 
 2. **How to test your bot?**
 
@@ -121,13 +123,14 @@ See the [Release History](https://github.com/claudiajs/claudia-bot-builder/relea
 - [MDNBot](https://vejather.github.io/mdn-bot-landing-page/) - A Slack bot that helps developers search MDN directory without leaving Slack channel.
 - [Ver.bot](https://rping.github.io/Ver.bot-site) - Subscribe GitHub, npm, PyPI projects, and get new version releases notifications!
 
-Building something cool with Claudia Bot Builder? Let us know or send a PR to update this list!
+Building something cool with Exa Bot Builder? Let us know or send a PR to update this list!
 
 ## Authors
 
 * [Gojko Adžić](https://github.com/gojko)
 * [Aleksandar Simović](https://github.com/simalexan)
 * [Slobodan Stojanović](https://github.com/stojanovic)
+* [Quirino Brizi](https://github.com/quirinobrizi)
 
 ## License
 
