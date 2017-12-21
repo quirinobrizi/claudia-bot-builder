@@ -41,7 +41,7 @@
   "license": "MIT",
   "dependencies": {
     "alexa-message-builder": "^1.1.0",
-    "exa-api-builder": "2.5.1",
+    "exa-api-builder": "^2.6.0",
     "minimal-request-promise": "^1.3.0",
     "oh-no-i-insist": "^1.0.0",
     "souffleur": "^1.0.0",
@@ -51,7 +51,7 @@
     "claudia": "^2.0.0",
     "eslint": "^2.11.1",
     "eslint-config-defaults": "^9.0.0",
-    "fake-http-request": "^1.3.0",
+    "fake-http-request": "^1.4.0",
     "jasmine": "^2.5.2",
     "jasmine-spec-reporter": "^2.7.0"
   }
