@@ -8,7 +8,7 @@ This is a port of Claudia Bot Builder that allows to use Express.
 [![Build Status](https://travis-ci.org/claudiajs/claudia-bot-builder.svg?branch=master)](https://travis-ci.org/claudiajs/claudia-bot-builder)
 [![Join the chat at https://gitter.im/claudiajs/claudia](https://badges.gitter.im/claudiajs/claudia.svg)](https://gitter.im/claudiajs/claudia?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-_Exa Bot Builder_ helps developers create and deploy chat-bots for various platforms in minutes to AWS Lambda. It simplifies the messaging workflows, automatically sets up the correct web hooks, and guides you through configuration steps, so that you can focus on important business problems and not have to worry about infrastructure code.
+_Exa Bot Builder_ helps developers create and deploy chat-bots for various platforms in minutes to AWS Lambda or using Express. It simplifies the messaging workflows, automatically sets up the correct web hooks, and guides you through configuration steps, so that you can focus on important business problems and not have to worry about infrastructure code.
 
 | [🚀 Getting Started](https://claudiajs.com/tutorials/hello-world-chatbot.html) | [🛠 API Docs](docs/API.md) | [🤖 Example projects](https://github.com/claudiajs/example-projects#chat-bots) | [🤔 FAQ](#frequently-asked-questions) | [💬 Chat on Gitter](https://gitter.im/claudiajs/claudia) |
 |-----------------|----------|------------------|-----|----|
@@ -19,6 +19,8 @@ Check out [this two minute video](https://vimeo.com/170647056) to see how you ca
 
 Here's a simple example:
 
+AWS Lambda
+
 ```javascript
 const botBuilder = require('claudia-bot-builder');
 const excuse = require('huh');
@@ -28,6 +30,18 @@ module.exports = botBuilder(function (message) {
     'Your message is very important to us, but ' +
     excuse.get();
 });
+```
+Express
+
+```javascript
+const botBuilder = require('claudia-bot-builder');
+const excuse = require('huh');
+
+module.exports = botBuilder(function (message) {
+  return 'Thanks for sending ' + message.text +
+    'Your message is very important to us, but ' +
+    excuse.get();
+}, { "aws": false, "express": true });
 ```
 
 This code is enough to operate bots for all supported platforms. Exa Bot Builder automatically parses the incoming messages into a common format, so you can handle it easily. It also automatically packages the response into the correct message template for the requesting bot, so you do not have to worry about individual bot protocols.
@@ -59,11 +73,23 @@ See the [Chat-Bots section](https://github.com/claudiajs/example-projects#chat-b
 
 1. **How to run it locally?**
 
-   You can't. At least not easy. Exa Bot Builder doesn't have a stand-alone http server in the background (such as Express, Hapi, etc.), instead it uses API Gateway and it's not trivial to simulate similar environment locally. Deploy it with `--version test` to create a separate test environment directly in AWS Lambda.
+  You can start it passing configuration options as defined on the following example:
+
+  ```javascript
+    const botBuilder = require('claudia-bot-builder');
+    const excuse = require('huh');
+
+    module.exports = botBuilder(function (message) {
+      return 'Thanks for sending ' + message.text +
+        'Your message is very important to us, but ' +
+        excuse.get();
+    }, { "aws": false, "express": true });
+  ```
+  The above will start a new express on port 3000.
 
 2. **How to test your bot?**
 
-   Your chat bot is just a Lambda function, which means it is just a simple JavaScript function and you should be able to, at least in theory, run everything locally as simple automated tests.
+   Your chat bot is just a Lambda function or web API, which means it is just a simple JavaScript function and you should be able to, at least in theory, run everything locally as simple automated tests.
 
    The most important thing is to design testable Lambda functions, [this guide](https://claudiajs.com/tutorials/designing-testable-lambdas.html) will help you to do that.
 
