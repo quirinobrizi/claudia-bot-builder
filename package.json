@@ -4,7 +4,6 @@
   "description": "Create chat-bots for various platforms and deploy with express or to AWS Lambda quickly",
   "main": "index.js",
   "scripts": {
-    "pretest": "eslint lib spec *.js",
     "test": "node spec/support/jasmine-runner.js",
     "debug": "node debug spec/support/jasmine-runner.js"
   },
