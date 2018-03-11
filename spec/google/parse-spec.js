@@ -9,16 +9,17 @@ describe('Google parse', () => {
       user: {
         userId: 'abcd'
       },
-      inputs: [{
-        intent: "actions.intent.MAIN",
-        rawInputs: {
-          query: 'The query from the user'
-        }
-      }]
+      "inputs": [{
+        "intent": "actions.intent.MAIN",
+        "rawInputs": [{
+          "inputType": "VOICE",
+          "query": "talk to daphne"
+        }]
+      }],
     };
     expect(parse(req)).toEqual({
       sender: 'abcd',
-      text: 'The query from the user',
+      text: 'talk to daphne',
       originalRequest: req,
       type: 'google'
     });
