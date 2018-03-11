@@ -9,11 +9,12 @@ describe('Google parse', () => {
       user: {
         userId: 'abcd'
       },
-      inputs: {
+      inputs: [{
+        intent: "actions.intent.MAIN",
         rawInputs: {
           query: 'The query from the user'
         }
-      }
+      }]
     };
     expect(parse(req)).toEqual({
       sender: 'abcd',
@@ -27,7 +28,7 @@ describe('Google parse', () => {
       user: {
         userId: 'abcd'
       },
-      inputs: {}
+      inputs: [{}]
     };
     expect(parse(req)).toEqual({
       sender: 'abcd',
@@ -39,7 +40,7 @@ describe('Google parse', () => {
 
   it('should return undefined if inputs and user are not provided', () => {
     let req = {
-      inputs: {}
+      inputs: [{}]
     };
     expect(parse(req)).toBeUndefined();
   });
