@@ -2,9 +2,9 @@
 
 This is a port of Claudia Bot Builder that allows to use Express.
 
-[![npm](https://img.shields.io/npm/v/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/exa-bot-builder)
-[![npm](https://img.shields.io/npm/dt/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/exa-bot-builder)
-[![npm](https://img.shields.io/npm/l/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://github.com/quirinobrizi/exa-bot-builder/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/exa-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/exa-bot-builder)
+[![npm](https://img.shields.io/npm/dt/exa-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/exa-bot-builder)
+[![npm](https://img.shields.io/npm/l/exa-bot-builder.svg?maxAge=2592000?style=plastic)](https://github.com/quirinobrizi/exa-bot-builder/blob/master/LICENSE)
 
 _Exa Bot Builder_ helps developers create and deploy chat-bots for various platforms in minutes to AWS Lambda or using Express. It simplifies the messaging workflows, automatically sets up the correct web hooks, and guides you through configuration steps, so that you can focus on important business problems and not have to worry about infrastructure code.
 
@@ -56,7 +56,7 @@ This code is enough to operate bots for all supported platforms. Exa Bot Builder
 
 ## Creating bots
 
-[![](https://nodei.co/npm/claudia-bot-builder.svg?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/claudia-bot-builder)
+[![](https://nodei.co/npm/exa-bot-builder.svg?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/claudia-bot-builder)
 
 Check out the [Getting Started](https://claudiajs.com/tutorials/hello-world-chatbot.html) guide for information on how to set up a simple bot in minutes and [API Documentation](docs/API.md) for detailed information on the API.
 
