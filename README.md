@@ -2,20 +2,14 @@
 
 This is a port of Claudia Bot Builder that allows to use Express.
 
-[![npm](https://img.shields.io/npm/v/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/claudia-bot-builder)
-[![npm](https://img.shields.io/npm/dt/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/claudia-bot-builder)
-[![npm](https://img.shields.io/npm/l/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://github.com/claudiajs/claudia-bot-builder/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/claudiajs/claudia-bot-builder.svg?branch=master)](https://travis-ci.org/claudiajs/claudia-bot-builder)
-[![Join the chat at https://gitter.im/claudiajs/claudia](https://badges.gitter.im/claudiajs/claudia.svg)](https://gitter.im/claudiajs/claudia?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![npm](https://img.shields.io/npm/v/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/exa-bot-builder)
+[![npm](https://img.shields.io/npm/dt/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/exa-bot-builder)
+[![npm](https://img.shields.io/npm/l/claudia-bot-builder.svg?maxAge=2592000?style=plastic)](https://github.com/quirinobrizi/exa-bot-builder/blob/master/LICENSE)
 
 _Exa Bot Builder_ helps developers create and deploy chat-bots for various platforms in minutes to AWS Lambda or using Express. It simplifies the messaging workflows, automatically sets up the correct web hooks, and guides you through configuration steps, so that you can focus on important business problems and not have to worry about infrastructure code.
 
-| [🚀 Getting Started](https://claudiajs.com/tutorials/hello-world-chatbot.html) | [🛠 API Docs](docs/API.md) | [🤖 Example projects](https://github.com/claudiajs/example-projects#chat-bots) | [🤔 FAQ](#frequently-asked-questions) | [💬 Chat on Gitter](https://gitter.im/claudiajs/claudia) |
+| [🚀 Getting Started](https://claudiajs.com/tutorials/hello-world-chatbot.html) | [🛠 API Docs](docs/API.md) | [🤖 Example projects](https://github.com/claudiajs/example-projects#chat-bots) | [🤔 FAQ](#frequently-asked-questions) |
 |-----------------|----------|------------------|-----|----|
-
-Check out [this two minute video](https://vimeo.com/170647056) to see how you can create and deploy a bot quickly:
-
-[![](https://claudiajs.com/assets/claudia-bot-builder-video.jpg)](https://vimeo.com/170647056)
 
 Here's a simple example:
 
@@ -58,6 +52,7 @@ This code is enough to operate bots for all supported platforms. Exa Bot Builder
 * Line
 * Kik
 * GroupMe
+* Google Action
 
 ## Creating bots
 
@@ -121,10 +116,6 @@ _Please, do not use GitHub issues for asking questions or requesting assistance/
 ## Contributing
 
 Contributions are greatly appreciated. See the [Contributors' guide](CONTRIBUTING.md) for information on running and testing code.
-
-## What's new since...?
-
-See the [Release History](https://github.com/claudiajs/claudia-bot-builder/releases)
 
 ## Cool things built with _Claudia bot Builder_
 
