@@ -1,6 +1,6 @@
 {
   "name": "exa-bot-builder",
-  "version": "2.17.10",
+  "version": "2.17.11",
   "description": "Create chat-bots for various platforms and deploy with express or to AWS Lambda quickly",
   "main": "index.js",
   "scripts": {
