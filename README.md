@@ -16,7 +16,7 @@ Here's a simple example:
 AWS Lambda
 
 ```javascript
-const botBuilder = require('claudia-bot-builder');
+const botBuilder = require('exa-bot-builder');
 const excuse = require('huh');
 
 module.exports = botBuilder(function (message) {
@@ -28,7 +28,7 @@ module.exports = botBuilder(function (message) {
 Express
 
 ```javascript
-const botBuilder = require('claudia-bot-builder');
+const botBuilder = require('exa-bot-builder');
 const excuse = require('huh');
 
 module.exports = botBuilder(function (message) {
@@ -43,6 +43,7 @@ This code is enough to operate bots for all supported platforms. Exa Bot Builder
 ## Supported platforms
 
 * Facebook Messenger
+* Google Actions
 * Slack (channel slash commands and apps with slash commands)
 * Skype
 * Viber
@@ -71,7 +72,7 @@ See the [Chat-Bots section](https://github.com/claudiajs/example-projects#chat-b
   You can start it passing configuration options as defined on the following example:
 
   ```javascript
-    const botBuilder = require('claudia-bot-builder');
+    const botBuilder = require('exa-bot-builder');
     const excuse = require('huh');
 
     module.exports = botBuilder(function (message) {
